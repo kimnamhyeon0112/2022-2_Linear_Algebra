@@ -43,10 +43,6 @@ def gauss(A):
                 
         # 현재 i번째 행과 최댓값을 갖는 행 maxRow의 교환
         for k in range(i, m):
-            # tmp = A[maxRow,k]
-            # A[maxRow,k] = A[i,k]
-            # A[i,k] = tmp
-            
             A[maxRow, k], A[i,k] = A[i,k], A[maxRow, k]
            
         # 추축성분 1로 만들기
