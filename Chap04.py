@@ -11,29 +11,29 @@ def pprint(msg, A):
         print(line)
     print("")
     
-# A = np.array([[1., 2.], [3., 4.]])
-# pprint("A", A)
+A = np.array([[1., 2.], [3., 4.]])
+pprint("A", A)
 
-# Ainv1 = np.linalg.matrix_power(A, -1)
-# pprint("linalg.matrix_power(A, -1) => Ainv1", Ainv1)
+Ainv1 = np.linalg.matrix_power(A, -1)
+pprint("linalg.matrix_power(A, -1) => Ainv1", Ainv1)
 
-# Ainv2 = np.linalg.inv(A)
-# pprint("np.linalg.inv(A) => Ainv2", Ainv2)
+Ainv2 = np.linalg.inv(A)
+pprint("np.linalg.inv(A) => Ainv2", Ainv2)
 
-# pprint("A*Ainv1", np.matmul(A, Ainv1))
-# pprint("A*Ainv2", np.matmul(A, Ainv2))
+pprint("A*Ainv1", np.matmul(A, Ainv1))
+pprint("A*Ainv2", np.matmul(A, Ainv2))
 
-# B = np.random.rand(3,3)
-# pprint("B =", B)
-# Binv = np.linalg.inv(B)
-# pprint("Binv =", Binv)
-# pprint("B*Binv =", np.matmul(B, Binv))
+B = np.random.rand(3,3)
+pprint("B =", B)
+Binv = np.linalg.inv(B)
+pprint("Binv =", Binv)
+pprint("B*Binv =", np.matmul(B, Binv))
 
-# C = np.array([[5,3,2,1],[6,2,4,5],[7,4,1,3],[4,3,5,2]])
-# D = np.array([[4],[2],[5],[1]])
-# x = np.matmul(np.linalg.inv(C), D)
-# pprint("x", x)
-# pprint("C*x", np.matmul(C, x))
+C = np.array([[5,3,2,1],[6,2,4,5],[7,4,1,3],[4,3,5,2]])
+D = np.array([[4],[2],[5],[1]])
+x = np.matmul(np.linalg.inv(C), D)
+pprint("x", x)
+pprint("C*x", np.matmul(C, x))
 
 # 2번
 import numpy as np
